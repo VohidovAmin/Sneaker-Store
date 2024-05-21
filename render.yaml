@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sneaker-store-web
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn sneaker_store.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: sneaker_store.settings
+      - key: SECRET_KEY
+        value: django-insecure-q^8lr(m^z99$!0(s3*4y&x&jvlz0=v@4)(fmk12ug)loamqv2b

@@ -1,0 +1,1 @@
+web: gunicorn sneaker_store.wsgi
